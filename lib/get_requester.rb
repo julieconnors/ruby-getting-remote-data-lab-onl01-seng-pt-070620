@@ -18,7 +18,6 @@ class GetRequester
   def parse_json
     staff = JSON.parse(self.get_response_body)
     staff
-    end
   end
   
 end
