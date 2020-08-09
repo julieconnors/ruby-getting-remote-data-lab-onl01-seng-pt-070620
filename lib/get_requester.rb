@@ -14,7 +14,7 @@ class GetRequester
   end
   
   def parse_json
-  
+    
   end
   
   def program_school
