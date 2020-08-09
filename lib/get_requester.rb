@@ -7,6 +7,10 @@ class GetRequester
     @url = url
   end
   
+  def self
+    
+  end
+  
   def get_response_body
     uri = URI.parse(@url)
     response = Net::HTTP.get_response(uri)
@@ -14,8 +18,8 @@ class GetRequester
   end
   
   def parse_json
-    x = JSON.parse(self.get_response_body)
-    x.collect do |x1|
+    request = JSON.parse(self.get_response_body)
+    request.collect do |requested|
       x[x1]
     end
   end
