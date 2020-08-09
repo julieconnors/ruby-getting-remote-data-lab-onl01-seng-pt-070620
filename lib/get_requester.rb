@@ -14,7 +14,9 @@ class GetRequester
   end
   
   def parse_json
-    
+    x = JSON.parse(self.get_response_body)
+    x.collect do |x1|
+      x[x1]
   end
   
   def program_school
