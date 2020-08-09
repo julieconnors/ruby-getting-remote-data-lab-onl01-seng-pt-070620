@@ -1,5 +1,5 @@
 require 'net/http'
-require 'open-uri'
+require 'pry'
 require 'json'
 
 class GetRequester
