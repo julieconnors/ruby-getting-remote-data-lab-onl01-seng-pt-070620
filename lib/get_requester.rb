@@ -20,10 +20,8 @@ class GetRequester
   end
   
   def parse_json
-    binding.pry
-    j_request = JSON.parse(self.get_response_body)
-    j_request.collect do |requested|
-      j_request[requested]
+    staff = JSON.parse(self.get_response_body)
+    staff
     end
   end
   
